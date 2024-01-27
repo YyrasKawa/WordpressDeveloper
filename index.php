@@ -1,13 +1,15 @@
-<h1><?php bloginfo('name'); ?></h1>
-<h2><?php bloginfo('description');  ?></h2>
+<?php 
 
-<?php
-function myFirstFunction($name, $color) {
+$names = array('Yury', 'Tanaj', 'Ulad', 'Ciska');
 
-    echo "<p>Hi, my name is $name and my favorite color is $color</p>";
-};
+$count = 0;
 
-myFirstFunction('John', 'white');
-myFirstFunction('Jane', 'blue');
+while($count < count($names)) {
+    echo "<li>Hi, my name is $names[$count]</li>";
+    $count++;
+}
 
 ?>
+
+
+<p>Hi, my name is <?php echo $names[3]; ?></p>
